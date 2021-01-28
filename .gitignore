@@ -1,0 +1,12 @@
+.tmp/
+build/
+target/
+node_modules/
+.history/
+.npmrc
+e2e-result.json
+browserstack.err
+.env
+tmp/
+cert.pem
+key.pem

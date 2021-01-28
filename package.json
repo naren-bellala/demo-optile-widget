@@ -1,0 +1,30 @@
+{
+    "name": "op-payment-widget-v3-packagecloud-demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified, but no problem\" && exit 0",
+        "copyVendors": "node ./local-build",
+        "prestart": "npm run copyVendors",
+        "start": "http-server -p 3000 ./",
+        "startssl": "http-server --ssl -p 3000 ./",
+        "preonlybuild": "npm run copyVendors",
+        "onlybuild": "node ./build",
+        "build": "npm run onlybuild",
+        "ghpages": "gh-pages -d build",
+        "postbuild": "npm run ghpages"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "gh-pages": "^2.2.0",
+        "op-payment-widget-v3": "^3.17.0"
+    },
+    "devDependencies": {
+        "fs-extra": "^8.1.0",
+        "http-server": "^0.12.1",
+        "minimist": "^1.2.5"
+    }
+}

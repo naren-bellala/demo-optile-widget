@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hosted Payment Page</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- dependencies needed for op-payment-widget-v3 -->
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" src="./op-payment-widget-v3.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="./op-payment-widget-v3.min.css" />
+        <!--  end of dependencies needed for op-payment-widget-v3 -->
+
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+
+        <!-- Js script for op-payment-widget-v3 -->
+        <script type="text/javascript">
+            function initPaymentPage() {
+                var dict = {};
+                checkoutList('paymentNetworks', {
+                    payButton: 'submitBtn',
+                    payButtonContainer: 'submitBtnContainer',
+                    widgetCssUrl: './widget.min.css',
+                    cardView: true,
+                });
+            }
+            document.addEventListener('DOMContentLoaded', function (event) {
+                initPaymentPage();
+            });
+        </script>
+        <!--  end of Js script for op-payment-widget-v3 -->
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">My shop</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- container needed for loading the payment methods in op-payment-widget-v3 -->
+        <div id="paymentNetworks" class="payment-networks-container"></div>
+        <!-- end of container needed for loading the payment methods in  op-payment-widget-v3 -->
+
+        <!-- buttons container and the main submit button used for triggering payment in op-payment-widget-v3 -->
+        <div id="submitBtnContainer" class="submit-buttons-container">
+            <button id="submitBtn" type="button" class="submit-button"></button>
+        </div>
+        <!-- end of buttons container and the main submit button used for triggering payment in op-payment-widget-v3 -->
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
