@@ -9,9 +9,9 @@ Note: op-payment-widget-v3 is an amd only library, so **using import or require 
 
 ## Steps to run demo
 
-To install a specific version, for example 3.8.0:
+To install a specific version, for example 3.28.0:
 
-`npm install --save op-payment-widget-v3@3.8.0 --registry https://packagecloud.io/optile/javascript/npm/`
+`npm install --save op-payment-widget-v3@3.28.0 --registry https://packagecloud.io/optile/javascript/npm/`
 
 To install the latest version, recommended for testing only:
 
@@ -49,3 +49,5 @@ then you can run
 in place of
 
 `npm start`
+
+**Note: The build scripts inside package.json ("preonlybuild", "onlybuild", "build", "ghpages", "postbuild") are for internal usage, and won't run properly on your side**

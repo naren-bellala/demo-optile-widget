@@ -1,6 +1,6 @@
 {
     "name": "op-payment-widget-v3-packagecloud-demo",
-    "version": "1.0.0",
+    "version": "1.0.1-beta",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -9,8 +9,8 @@
         "prestart": "npm run copyVendors",
         "start": "http-server -p 3000 ./",
         "startssl": "http-server --ssl -p 3000 ./",
-        "preonlybuild": "npm run copyVendors",
-        "onlybuild": "node ./build",
+        "preonlybuild": "npm run copyVendors ",
+        "onlybuild": "shjs build.js",
         "build": "npm run onlybuild",
         "ghpages": "gh-pages -d build",
         "postbuild": "npm run ghpages"
@@ -20,11 +20,12 @@
     "license": "ISC",
     "dependencies": {
         "gh-pages": "^2.2.0",
-        "op-payment-widget-v3": "^3.17.0"
+        "op-payment-widget-v3": "^3.28.0"
     },
     "devDependencies": {
         "fs-extra": "^8.1.0",
         "http-server": "^0.12.1",
-        "minimist": "^1.2.5"
+        "minimist": "^1.2.5",
+        "shelljs": "^0.7.5"
     }
 }

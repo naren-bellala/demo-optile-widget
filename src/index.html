@@ -4,6 +4,13 @@
         <title>Hosted Payment Page</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+
         <!-- dependencies needed for op-payment-widget-v3 -->
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -15,12 +22,13 @@
         <link rel="stylesheet" type="text/css" href="./op-payment-widget-v3.min.css" />
         <!--  end of dependencies needed for op-payment-widget-v3 -->
 
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous"
-        />
+        <!-- Needed for Bootstrap css apps in non selective native -->
+        <style>
+            .op-payment-widget-container .row {
+                display: block;
+            }
+        </style>
+        <!-- end of Needed for Bootstrap css apps in non selective native -->
 
         <!-- Js script for op-payment-widget-v3 -->
         <script type="text/javascript">
