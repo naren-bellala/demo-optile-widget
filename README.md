@@ -42,7 +42,7 @@ html, css and js should be in the same directory together and where the checkout
 
 To run https locally, you need to generate cert.pem and key.pem using openssl `openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem` check openssl : https://github.com/openssl/openssl
 
-than you can run
+then you can run
 
 `npm run startssl`
 
