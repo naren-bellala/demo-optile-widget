@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified, but no problem\" && exit 0",
-        "copyVendors": "node ./local-build",
+        "copyVendors": "node ./setup-local-build",
         "prestart": "npm run copyVendors",
         "start": "http-server -p 3000 ./",
         "startssl": "http-server --ssl -p 3000 ./",
