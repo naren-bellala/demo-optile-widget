@@ -51,3 +51,4 @@ in place of
 `npm start`
 
 **Note: The build scripts inside package.json ("preonlybuild", "onlybuild", "build", "ghpages", "postbuild") are for internal usage, and won't run properly on your side**
+# demo-optile-widget

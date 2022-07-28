@@ -20,7 +20,7 @@
     "license": "ISC",
     "dependencies": {
         "gh-pages": "^2.2.0",
-        "op-payment-widget-v3": "^3.28.0"
+        "op-payment-widget-v3": "file:../../Downloads/package"
     },
     "devDependencies": {
         "fs-extra": "^8.1.0",
